@@ -10,20 +10,20 @@ Essas instruções fornecerão uma cópia do projeto em execução na sua máqui
 
 Tecnologias abordadas no projeto:
 
-* [git](https://github.com/)
-* [java](https://www.youtube.com/watch?v=QItDKagPKuE)
+* [Git](https://github.com/)
+* [Java](https://www.youtube.com/watch?v=QItDKagPKuE)
 * [Spring Boot](https://spring.io/tools)
 * [Mavan](https://maven.apache.org/)
 * [VueJS](https://vuejs.org/)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Prepare o ambiente para seu desenvolvimento:
 
-Say what the step will be
+Clone o repositorio.
 
 ```
-Give the example
+git clone https://github.com/idelberto/iponto.git
 ```
 
 And repeat
