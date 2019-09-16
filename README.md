@@ -11,11 +11,11 @@ Essas instruções fornecerão uma cópia do projeto em execução na sua máqui
 Tecnologias abordadas no projeto:
 
 ```
-* git
-* java
-* Spring Boot
-* Mavan
-* VueJS
+* [git] - (https://github.com/)
+* [java] - (https://www.youtube.com/watch?v=QItDKagPKuE)
+* [Spring Boot] - (https://spring.io/tools)
+* [Mavan] - (https://maven.apache.org/)
+* [VueJS] - (https://vuejs.org/)
 ```
 
 ### Installing
@@ -36,18 +36,6 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ### And coding style tests
 
 Explain what these tests test and why
@@ -58,7 +46,8 @@ Give an example
 
 ## Deployment
 
-Deploy Heroku
+Deploy Heroku 
+[Heroku] - (https://adamatti.github.io/blog/git/2017/06/04/heroku.html)
 
 ## Built
 
@@ -73,12 +62,12 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-## Authors
+## Autores
 
-* **Franklyn Novaes** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Ian Cesar** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Idelberto Ferreira Couto** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Jorge da Silva** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Franklyn Novaes** - *Idealizador* - [github](https://github.com/)
+* **Ian Cesar** - *Idealizador* - [github](https://github.com/)
+* **Idelberto Ferreira Couto** - *Idealizador* - [github](https://github.com/idelberto)
+* **Jorge da Silva** - *Idealizador* - [github](https://github.com/)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
