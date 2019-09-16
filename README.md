@@ -1,17 +1,24 @@
 # iPonto
 
-One Paragraph of project description goes here
+Aplicação para controle de marcações de ponto para funcionarios da SPDATA.
 
 ## Getting Started
 
-Essas instruções fornecerão uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste, assim propiciando um entendimento sobre as tecmnologias utilizadas por esse projeto.
+Essas instruções fornecerão uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste, assim propiciando um entendimento sobre as tecmnologias utilizadas.
 
-### Prerequisites
+### Pré Requisitos
 
-What things you need to install the software and how to install them
+Para montar o ambiente de desenvolvimento você ira precisar:
 
 ```
-Give examples
+git: $git clone https://github.com/idelberto/iponto.git
+
+openJDK-8 
+https://www.youtube.com/watch?v=QItDKagPKuE
+
+STS 
+https://spring.io/tools
+
 ```
 
 ### Installing
