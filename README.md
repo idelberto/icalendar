@@ -11,11 +11,11 @@ Essas instruções fornecerão uma cópia do projeto em execução na sua máqui
 Tecnologias abordadas no projeto:
 
 ```
-* [git] - (https://github.com/)
-* [java] - (https://www.youtube.com/watch?v=QItDKagPKuE)
-* [Spring Boot] - (https://spring.io/tools)
-* [Mavan] - (https://maven.apache.org/)
-* [VueJS] - (https://vuejs.org/)
+* [git](https://github.com/)
+* [java](https://www.youtube.com/watch?v=QItDKagPKuE)
+* [Spring Boot](https://spring.io/tools)
+* [Mavan](https://maven.apache.org/)
+* [VueJS](https://vuejs.org/)
 ```
 
 ### Installing
