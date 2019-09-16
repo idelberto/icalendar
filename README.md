@@ -8,17 +8,14 @@ Essas instruções fornecerão uma cópia do projeto em execução na sua máqui
 
 ### Pré Requisitos
 
-Para montar o ambiente de desenvolvimento você ira precisar:
+Tecnologias abordadas no projeto:
 
 ```
-git: $git clone https://github.com/idelberto/iponto.git
-
-openJDK-8 
-https://www.youtube.com/watch?v=QItDKagPKuE
-
-STS 
-https://spring.io/tools
-
+* git
+* java
+* Spring Boot
+* Mavan
+* VueJS
 ```
 
 ### Installing
