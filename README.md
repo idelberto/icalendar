@@ -58,11 +58,10 @@ Give an example
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Deploy Heroku
 
-## Built With
+## Built
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
@@ -76,7 +75,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Franklyn Novaes** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Ian Cesar** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Idelberto Ferreira Couto** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Jorge da Silva** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
