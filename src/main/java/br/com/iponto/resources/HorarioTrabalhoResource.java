@@ -19,14 +19,14 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import br.com.iponto.entities.HorarioTrabalho;
-import br.com.iponto.repository.HorarioTrabalhoRepository;
+import br.com.iponto.services.HorarioTrabalhoService;
 
 @RestController
 @RequestMapping(value = "/horariosTrabalho")
 public class HorarioTrabalhoResource {
 
 	@Autowired
-	private HorarioTrabalhoRepository hhtrep;
+	private HorarioTrabalhoService hhtrep;
 
 	@GetMapping
 	public ResponseEntity<HorarioTrabalho> find() {
@@ -51,9 +51,9 @@ public class HorarioTrabalhoResource {
 		return ResponseEntity.created(uri).body(obj);
 	}
 
-	@PutMapping(value = "/{id}")
-	public ResponseEntity<HorarioTrabalho> update(@PathVariable("id") Integer id, @RequestBody HorarioTrabalho horarioTrabalho) {
-		return hhtrep.findById(id).map(record -> {
+	@PutMapping
+	public ResponseEntity<HorarioTrabalho> update(@RequestBody HorarioTrabalho horarioTrabalho) {
+		return hhtrep.findById(horarioTrabalho.getId()).map(record -> {
 			record.setDia(horarioTrabalho.getDia());
 			record.setEntrada(horarioTrabalho.getEntrada());
 			record.setSaidaAlmoco(horarioTrabalho.getSaidaAlmoco());

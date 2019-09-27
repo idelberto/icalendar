@@ -90,6 +90,9 @@ public class HorarioTrabalho {
 		this.saida = saida;
 	}
 
+	public HorarioTrabalho() {
+	}
+
 	public HorarioTrabalho(Integer usuario, Date dia, Time entrada, Time saidaAlmoco, Time retornoAlmoco, Time saida) {
 		super();
 		this.usuario = usuario;
