@@ -4,13 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.iponto.entities.Marcacao;
-import br.com.iponto.repository.MarcacaoRepositorio;
+import br.com.iponto.repositories.MarcacaoRepository;
 
 @Service
 public class MarcacaoService{
 
     @Autowired
-    private MarcacaoRepositorio marcacaoRepositorio;
+    private MarcacaoRepository marcacaoRepositorio;
 
     public Marcacao getbyId(int id)
     {

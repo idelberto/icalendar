@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.iponto.entities.TipoMarcacao;
-import br.com.iponto.repository.TipoMarcacaoRepositorio;
+import br.com.iponto.repositories.TipoMarcacaoRepositorio;
 
 @Service
 public class TipoMarcacaoService

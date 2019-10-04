@@ -1,8 +1,6 @@
 package br.com.iponto.resources;
 
 import java.net.URI;
-import java.sql.Date;
-import java.sql.Time;
 
 import javax.validation.Valid;
 
@@ -31,41 +29,37 @@ public class HorarioTrabalhoResource {
 	@GetMapping
 	public ResponseEntity<HorarioTrabalho> find() {
 
-		HorarioTrabalho hhtrab;
-		hhtrab = hhtrep.save(new HorarioTrabalho(1, new Date(2019, 7, 1), new Time(8, 0, 0), new Time(12, 0, 0), new Time(13, 30, 0), new Time(18, 0, 0)));
-		return ResponseEntity.ok().body(hhtrab);
+		return null;
 
 	}
 
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<HorarioTrabalho> findById(@PathVariable Integer id) {
-		return hhtrep.findById(id)
-				.map(record -> ResponseEntity.ok().body(record))
-				.orElse(ResponseEntity.notFound().build());
+	public ResponseEntity<HorarioTrabalho> findById(@PathVariable final Short id) {
+		return hhtrep.findById(id).map(record -> ResponseEntity.ok().body(record)).orElse(ResponseEntity.notFound().build());
 	}
 
 	@PostMapping
-	public ResponseEntity<HorarioTrabalho> create(@Valid @RequestBody HorarioTrabalho horarioTrabalho) {
-		HorarioTrabalho obj = hhtrep.save(horarioTrabalho);
-		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(obj.getId()).toUri();
+	public ResponseEntity<HorarioTrabalho> create(@Valid @RequestBody final HorarioTrabalho horarioTrabalho) {
+		final HorarioTrabalho obj = hhtrep.save(horarioTrabalho);
+		final URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(obj.getId()).toUri();
 		return ResponseEntity.created(uri).body(obj);
 	}
 
 	@PutMapping
-	public ResponseEntity<HorarioTrabalho> update(@RequestBody HorarioTrabalho horarioTrabalho) {
+	public ResponseEntity<HorarioTrabalho> update(@RequestBody final HorarioTrabalho horarioTrabalho) {
 		return hhtrep.findById(horarioTrabalho.getId()).map(record -> {
 			record.setDia(horarioTrabalho.getDia());
 			record.setEntrada(horarioTrabalho.getEntrada());
 			record.setSaidaAlmoco(horarioTrabalho.getSaidaAlmoco());
-			record.setRetornoAlmoco(horarioTrabalho.getRetornoAlmoco());			
-			
-			HorarioTrabalho updated = hhtrep.save(record);
+			record.setRetornoAlmoco(horarioTrabalho.getRetornoAlmoco());
+
+			final HorarioTrabalho updated = hhtrep.save(record);
 			return ResponseEntity.accepted().body(updated);
 		}).orElse(ResponseEntity.notFound().build());
 	}
 
 	@DeleteMapping(path = { "/{id}" })
-	public ResponseEntity<?> delete(@PathVariable Integer id) {
+	public ResponseEntity<?> delete(@PathVariable final Short id) {
 		return hhtrep.findById(id).map(record -> {
 			hhtrep.deleteById(id);
 			return ResponseEntity.ok().build();

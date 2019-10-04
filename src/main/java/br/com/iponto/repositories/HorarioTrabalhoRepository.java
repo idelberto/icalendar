@@ -1,4 +1,4 @@
-package br.com.iponto.repository;
+package br.com.iponto.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import br.com.iponto.entities.HorarioTrabalho;
 
 @Repository
-public interface HorarioTrabalhoRepository extends CrudRepository<HorarioTrabalho, Integer>{
+public interface HorarioTrabalhoRepository extends CrudRepository<HorarioTrabalho, Short> {
 
 }
