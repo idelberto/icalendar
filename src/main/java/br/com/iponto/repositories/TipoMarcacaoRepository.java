@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import br.com.iponto.entities.TipoMarcacao;
 
 @Repository
-public interface TipoMarcacaoRepositorio extends CrudRepository<TipoMarcacao, Integer> {
+public interface TipoMarcacaoRepository extends CrudRepository<TipoMarcacao, Integer> {
 
 }
