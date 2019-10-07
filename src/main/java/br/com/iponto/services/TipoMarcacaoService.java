@@ -4,14 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.iponto.entities.TipoMarcacao;
-import br.com.iponto.repositories.TipoMarcacaoRepositorio;
+import br.com.iponto.repositories.TipoMarcacaoRepository;
 
 @Service
 public class TipoMarcacaoService
 {
 
     @Autowired
-    private TipoMarcacaoRepositorio tipoMarcacaoRepositorio;
+    private TipoMarcacaoRepository tipoMarcacaoRepositorio;
 
     public TipoMarcacao getById(int id){
 

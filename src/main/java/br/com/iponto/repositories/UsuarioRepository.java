@@ -1,4 +1,4 @@
-package br.com.iponto.repositorio;
+package br.com.iponto.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import br.com.iponto.dominio.Usuario;
 
 @Repository
-public interface UsuarioRepositorio extends JpaRepository<Usuario, Integer>{
+public interface UsuarioRepository extends JpaRepository<Usuario, Integer>{
 
 }
 
