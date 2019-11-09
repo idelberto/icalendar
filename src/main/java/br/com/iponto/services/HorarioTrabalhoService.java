@@ -17,13 +17,14 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import br.com.iponto.entities.HorarioTrabalho;
+import br.com.iponto.repositories.HorarioTrabalhoRepository;
 
 @RestController
 @RequestMapping(value = "/horariosTrabalho")
 public class HorarioTrabalhoService {
 
 	@Autowired
-	private HorarioTrabalhoService hhtrep;
+	private HorarioTrabalhoRepository hhtrep;
 
 	@GetMapping
 	public ResponseEntity<HorarioTrabalho> find() {
